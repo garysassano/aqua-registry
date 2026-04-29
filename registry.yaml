@@ -3809,6 +3809,22 @@ packages:
               - name: redli
                 src: redli_{{.Arch}}.exe
   - type: github_release
+    repo_owner: IohannRabeson
+    repo_name: tmignore-rs
+    description: Makes Time Machine respect .gitignore files
+    version_constraint: "false"
+    version_overrides:
+      - version_constraint: semver("<= 0.1.5") or Version == "0.3.1"
+        no_asset: true
+      - version_constraint: "true"
+        asset: tmignore-rs_{{trimV .Version}}_{{.Arch}}.zip
+        format: zip
+        replacements:
+          amd64: x86-64
+          arm64: aarch64
+        supported_envs:
+          - darwin
+  - type: github_release
     repo_owner: IvanIsCoding
     repo_name: celq
     description: "celq - A Common Expression Language (CEL) CLI Tool"
