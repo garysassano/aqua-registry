@@ -15,7 +15,7 @@ packages:
             format: zip
             files:
               - name: edit
-                src: "{{.AssetWithoutExt}}/edit.exe"
+                src: "{{.AssetWithoutExt}}/edit"
         replacements:
           amd64: x86_64
           arm64: aarch64
@@ -38,7 +38,7 @@ packages:
             format: zip
             files:
               - name: edit
-                src: "{{.AssetWithoutExt}}/edit.exe"
+                src: "{{.AssetWithoutExt}}/edit"
         supported_envs:
           - linux
           - windows
@@ -50,7 +50,7 @@ packages:
             format: zip
             files:
               - name: edit
-                src: "{{.AssetWithoutExt}}/edit.exe"
+                src: "{{.AssetWithoutExt}}/edit"
         replacements:
           amd64: x86_64
           arm64: aarch64
@@ -66,7 +66,7 @@ packages:
             format: zip
             files:
               - name: edit
-                src: "{{.AssetWithoutExt}}/edit.exe"
+                src: "{{.AssetWithoutExt}}/edit"
         replacements:
           amd64: x86_64
           arm64: aarch64
