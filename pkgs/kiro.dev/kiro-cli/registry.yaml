@@ -4,7 +4,7 @@ packages:
     name: kiro.dev/kiro-cli
     description: Kiro CLI is an agentic coding tool that lives in your terminal
     link: https://kiro.dev/docs/cli/installation/
-    url: https://desktop-release.q.us-east-1.amazonaws.com/{{.Version}}/kirocli-{{.Arch}}-linux-musl.zip
+    url: https://prod.download.cli.kiro.dev/stable/{{.Version}}/kirocli-{{.Arch}}-linux-musl.zip
     format: zip
     files:
       - name: kiro-cli
@@ -16,7 +16,7 @@ packages:
       arm64: aarch64
     overrides:
       - goos: linux
-        url: https://desktop-release.q.us-east-1.amazonaws.com/{{.Version}}/kirocli-{{.Arch}}-linux.zip
+        url: https://prod.download.cli.kiro.dev/stable/{{.Version}}/kirocli-{{.Arch}}-linux.zip
         variants:
           - key: libc
             value: gnu
@@ -25,7 +25,7 @@ packages:
           - key: libc
             value: musl
       - goos: darwin
-        url: https://desktop-release.q.us-east-1.amazonaws.com/{{.Version}}/Kiro%20CLI.dmg
+        url: https://prod.download.cli.kiro.dev/stable/{{.Version}}/Kiro%20CLI.dmg
         format: dmg
         files:
           - name: kiro-cli
